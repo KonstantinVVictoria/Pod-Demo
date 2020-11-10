@@ -22,7 +22,7 @@ const MainTemplate = () =>
     return(<>
     <header className={Style("main-header")}>
         <nav className={Style("main-navbar")}>
-            <button className={Style("main-navbar-button")}><ListIcon/></button> 
+            <button className={Style("main-navbar-button")}><ListIcon/></button><h1 style={{margin:"0px 20px 0px", fontSize:"240%"}}>PodCo</h1>
                 <div style={{display:"flex", position:"absolute", right:0, marginRight:"5px"}}>
                     <button className={Style("main-navbar-button")}><SearchIcon/></button> 
                     <button style={{marginLeft:"5px", width:"100px"}}className={Style("main-navbar-button")}>Status</button>
