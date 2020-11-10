@@ -1,0 +1,19 @@
+.body {
+  border-radius: 40px;
+  margin: 10px 0px 10px;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  background-color: rgb(202, 202, 202);
+  align-items: center;
+}
+.interface {
+  padding: 7px;
+}
+.play-button {
+  height: 37px;
+  width: 37px;
+  border-radius: 100%;
+  background-color: rgb(139, 139, 139);
+  border: none;
+}
