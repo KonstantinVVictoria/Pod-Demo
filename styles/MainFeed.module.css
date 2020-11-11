@@ -31,11 +31,13 @@
   height: 30px;
   position: relative;
   margin-bottom: 10px;
+  z-index: 1;
 }
 .widgets-buttons {
   position: absolute;
   right: 0;
   display: flex;
+  z-index: 1;
 }
 .widget-icon {
   margin-left: 10px;
@@ -47,4 +49,5 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  z-index: 1;
 }

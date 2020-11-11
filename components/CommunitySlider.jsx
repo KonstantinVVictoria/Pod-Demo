@@ -11,7 +11,7 @@ const Feed = () =>
         Cards.push(<Card name={element.name}/>)
     });
     return(<>
-    <h1 style={{margin:"0px 10px 10px"}}>Communities</h1>
+    <h1 style={{margin:"0px 10px 20px", fontWeight:"200"}}>Communities</h1>
     <div className={Style("body")}>
         {Cards}
     </div>

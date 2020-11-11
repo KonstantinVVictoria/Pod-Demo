@@ -9,7 +9,7 @@ const Style =(style_name) =>
 }
 const Feed = () =>
 {
-    return(<><h1 style={{margin:"10px 10px 20px"}}>Feed</h1>
+    return(<><h1 style={{margin:"10px 10px 20px", paddingBottom:"5px",fontWeight:"200", borderBottom:"solid 1px rgb(231, 231, 231)"}}>Feed</h1>
     <div className={Style("body")}>
         <Post/>
         <Post/>
