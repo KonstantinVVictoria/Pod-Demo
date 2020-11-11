@@ -15,10 +15,10 @@
 }
 .post-tag {
   border-radius: 100px;
-  border: solid 1px rgb(231, 231, 231);
+  border: solid 1px #882cca;
   flex-grow: 0;
   padding: 3px 8px 3px;
-  color: rgb(151, 151, 151);
+  color: #882cca;
 }
 .post-desc {
   display: flex;

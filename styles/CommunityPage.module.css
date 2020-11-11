@@ -1,0 +1,29 @@
+.body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 30px;
+  margin-bottom: 30px;
+}
+.community-image {
+  height: 150px;
+  width: 150px;
+  background-color: gray;
+  border-radius: 100%;
+  border: none;
+  object-fit: cover;
+  z-index: 1;
+}
+.community-image-glow {
+  height: 160px;
+  width: 160px;
+  background-color: gray;
+  border-radius: 100%;
+  border: none;
+  object-fit: cover;
+  position: absolute;
+  transform: translate(-155px, -5px);
+  z-index: -1;
+  filter: blur(20px);
+}

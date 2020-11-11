@@ -25,11 +25,13 @@
 .card > button {
   border-radius: 100px;
   border: none;
-  background-color: rgb(236, 236, 236);
+  background-color: #882cca;
   height: 15%;
   width: 40%;
+  color: white;
 }
 .card > p {
+  color: #882cca;
   margin: 5px 0px 10px;
 }
 .card > div {
@@ -37,4 +39,26 @@
   height: 100px;
   width: 100px;
   background-color: gray;
+}
+.community-image {
+  height: 100px;
+  width: 100px;
+  background-color: gray;
+  border-radius: 100%;
+  border: none;
+  object-fit: cover;
+  z-index: 1;
+  position: relative;
+}
+.community-image-glow {
+  height: 105px;
+  width: 105px;
+  background-color: gray;
+  border-radius: 100%;
+  border: none;
+  object-fit: cover;
+  position: absolute;
+  transform: translate(-102.5px, -1.25px);
+  z-index: 0;
+  filter: brightness(200%) blur(10px);
 }

@@ -11,8 +11,9 @@ const MiniPlayer = () =>
     <div className={Style("body")}>
         <div className={Style("interface")}>
             <button className={Style("play-button")}></button>
-            <div></div>
+
         </div>
+        <div className={Style("slider")}></div>
     </div>)
 }
 export default MiniPlayer;

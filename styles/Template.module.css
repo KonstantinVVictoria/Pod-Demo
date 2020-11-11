@@ -15,12 +15,12 @@
 }
 .main-navbar-button {
   border-radius: 10px;
-  border: solid 2px black;
+  border: solid 2px #882cca;
   height: 40px;
   width: 40px;
   font-family: "Quicksand", sans-serif;
   font-size: 170%;
-  color: black;
+  color: #882cca;
   background-color: white;
   display: flex;
   align-items: center;

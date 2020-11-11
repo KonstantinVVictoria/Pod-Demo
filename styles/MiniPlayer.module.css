@@ -1,19 +1,31 @@
 .body {
   border-radius: 40px;
   margin: 10px 0px 10px;
-  height: 50px;
+  height: 35px;
   width: 100%;
   display: flex;
   background-color: #882cca;
   align-items: center;
 }
 .interface {
-  padding: 7px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .play-button {
-  height: 37px;
-  width: 37px;
+  height: 35px;
+  width: 35px;
   border-radius: 100%;
   background-color: #480e72;
   border: none;
+}
+
+.slider {
+  height: 1px;
+  border-radius: 50px;
+  width: 100%;
+  background-color: white;
+  margin: 0px 10px 0px;
+  visibility: hidden;
 }

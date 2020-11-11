@@ -1,10 +1,18 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import StyleTemplate from "../styles/CommunityPage.module.css"
 import Template from '../templates/main'
-import MainFeed from "../components/MainFeed"
-import Communities from "../components/CommunitySlider"
+import MainFeed from "../components/MainFeed"  
+import { withRouter } from 'next/router'
+import LoadCS from "../components/LoadCS"
+const Style =(style_name) =>
+{
+    return StyleTemplate[`${style_name}`]
+} 
 
-export default function Home() {
+function Community(props) {
+  const CommunityPage = LoadCS("Community")
+  let id = props.router.query.communityId || props.router.asPath[props.router.asPath.length-1]
   return (   
     <div className={styles.container}>
       
@@ -28,16 +36,17 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"/> 
       </Head>
       <Template>
-        <MainPage/>
+        <CommunityPage id={id}/>
+        <MainFeed/>
       </Template>
     </div>
   )
 }
+export default withRouter(Community)
+const Tags = ()=>{
 
+}
 
-const MainPage =()=>{
-  return(<>
-  <Communities/>
-  <MainFeed/>
-  </>)
+const Stats = ()=>{
+  
 }

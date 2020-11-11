@@ -1,4 +1,5 @@
 import StyleTemplate from "../styles/HiddenMenu.module.css";
+import Image from 'next/image'
 const Style =(style_name) =>
 {
     return StyleTemplate[`${style_name}`]
@@ -22,10 +23,17 @@ const Status = () =>
     return (<>
     <div style={{display:"flex", flexDirection:"column", position: "relative"}}>
         <div className={Style("status-profile-pic")}>
-            <img></img>
+            <Image
+            src="/assets/profile.png"
+            alt="Picture of the author"
+            width={500}
+            height={500}
+        />
+
         </div>
+        <h2 style={{color:"white",margin:"5px"}}>Konstantin's status:</h2>
         <div style={{position:"absolute", right:"0",display:"flex", alignItems:"center", height:"40px"}}>
-            <p style={{color:"lightgreen"}}>Active</p><p style={{color:"rgb(190, 190, 190)"}}>| Not Active</p>
+            <p style={{color:"lightgreen"}}>Active &nbsp;</p><p style={{color:"rgb(190, 190, 190)"}}>| Not Active</p>
         </div>
     <textarea className={Style("status-changer")}>
     </textarea>
