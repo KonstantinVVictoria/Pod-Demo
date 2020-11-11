@@ -19,7 +19,7 @@ const Template = ({children}) =>
 
 const MainTemplate = ({children}) =>
 {
-    const [hiddenMenuStatus, changeHiddenMenu] = useState("none") 
+    const [hiddenMenuStatus, changeHiddenMenu] = useState("noshow") 
     return(<>
     <NavBar changeHiddenMenu={changeHiddenMenu} hiddenMenuStatus={hiddenMenuStatus}/>
     <HiddenMenu status={hiddenMenuStatus}/>
@@ -35,11 +35,11 @@ const NavBar = ({changeHiddenMenu, hiddenMenuStatus}) =>
   return(
   <header className={Style("main-header")}>
   <nav className={Style("main-navbar")}>
-      <button onMouseDown={()=>changeHiddenMenu("list")} className={Style("main-navbar-button")}><ListIcon/></button>
+      <button onMouseDown={()=>hiddenMenuStatus !="nav" ? changeHiddenMenu("nav"): changeHiddenMenu("noshow")} className={Style("main-navbar-button")}><ListIcon/></button>
       <h1 style={{color:"#882cca", margin:"0px 20px 0px", fontSize:"240%", fontWeight: "200"}}>PodCo</h1>
           <div style={{display:"flex", position:"absolute", right:0, marginRight:"5px"}}>
-              <button className={Style("main-navbar-button")}><SearchIcon/></button> 
-              <button onMouseDown={()=> hiddenMenuStatus !="status" ? changeHiddenMenu("status"): changeHiddenMenu("")}style={{marginLeft:"5px", width:"100px"}}className={Style("main-navbar-button")}>Status</button>
+              <button onMouseDown={()=> hiddenMenuStatus !="search" ? changeHiddenMenu("search"): changeHiddenMenu("noshow")} className={Style("main-navbar-button")}><SearchIcon/></button> 
+              <button onMouseDown={()=> hiddenMenuStatus !="status" ? changeHiddenMenu("status"): changeHiddenMenu("noshow")}style={{marginLeft:"5px", width:"100px"}}className={Style("main-navbar-button")}>Status</button>
           </div>
   </nav>
 </header>)

@@ -4,7 +4,8 @@ import StarIcon from "../assets/star.svg"
 import BookmarkIcon from "../assets/bookmark.svg"
 import CommentIcon from "../assets/comment.svg"
 import Posts from "../data/posts.json"
-import Users from "../data/users.json"
+import Image from 'next/image'
+import { useRouter } from 'next/router'
 import {useState} from "react"
 
 const Style =(style_name) =>
@@ -30,7 +31,7 @@ const Feed = () =>
     <div style={{display:"flex", margin:"10px 10px 20px", paddingBottom: "10px",  borderBottom:"solid 1px rgb(231, 231, 231)"}}>
         <h1 onMouseDown={()=>{changeShow("feed")}} style={{ color: show === "feed" ?"black" : "gainsboro", userSelect: "none",margin: "0px", fontWeight:"700"}}>Feed</h1> 
         <h1 style={{userSelect: "none", margin: "0px 10px 0px", fontWeight:"700"}}>|</h1>
-        <h1 onMouseDown={()=>{changeShow("users"); console.log("clocked")}} style={{userSelect: "none", color:show !== "feed" ? "black" : "gainsboro", margin: "0", fontWeight:"700"}}>People</h1>
+        <h1 onMouseDown={()=>{changeShow("users"); console.log("clocked")}} style={{userSelect: "none", color:show !== "feed" ? "black" : "gainsboro", margin: "0", fontWeight:"700"}}>Members</h1>
     </div>
     <div className={Style("body")}>
         {content}
@@ -39,8 +40,36 @@ const Feed = () =>
 }
 const User =  () =>
 {
-    return(<div>
+    const router = useRouter()
+    return(
+    <div className={Style("post")}>
+        <div style={{display:"flex"}}>
+            <div style={{display:"flex", borderRadius:"100%", height:"80px", width:"80px"}}>
+            <Image
+            src="/assets/profile.png"
+            alt="Picture of the author"
+            width={80}
+            height={80}
+            />
+            </div>
+            <div style={{display:"flex", flexDirection:"column"}}>
+                <div style={{display:"flex"}}>
+                <h3 onMouseDown={()=>{ router.push({
+                pathname: '/profile',
+                })
+                }} style={{outline:"none", display:"flex", alignItems:"center", margin:"0px"}}>
+                    Konstantin                
+                <div style={{marginLeft:"10px",height:"12px", width:"12px", backgroundColor:"lightgreen", borderRadius:"100%"}}/>
+                </h3>
 
+                </div>
+                <p style={{margin:"5px 0px"}}>I am a new person!</p>
+                <div style={{display:"flex"}}>
+                    <p style={{margin:"0px 10px 0px 0px"}}>followers:</p>13
+                    <p style={{margin:"0px 10px 30px"}}>casts: </p>54
+                </div>
+            </div>
+        </div>
     </div>)
 }
 const Post = ({title, tag, time, contributors, duration, stats}) =>

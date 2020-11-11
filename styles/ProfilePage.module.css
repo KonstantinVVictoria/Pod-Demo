@@ -1,0 +1,77 @@
+.body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #882cca;
+}
+.profile-image {
+  height: 150px;
+  width: 150px;
+  background-color: gray;
+  border-radius: 100%;
+  border: 2px solid #882cca;
+  object-fit: cover;
+  z-index: 1;
+}
+.profile-image-glow {
+  height: 160px;
+  width: 160px;
+  border-radius: 100%;
+  border: none;
+  object-fit: cover;
+  position: absolute;
+  transform: translate(-155px, -5px);
+  z-index: -1;
+  filter: blur(20px);
+}
+.post {
+  width: 100%;
+  padding: 0px 10px 0px;
+  border-bottom: solid 2px rgb(231, 231, 231);
+}
+.post-title {
+  font-size: 100%;
+  font-weight: 200;
+}
+.post-tag {
+  border-radius: 100px;
+  border: solid 1px #882cca;
+  flex-grow: 0;
+  padding: 3px 8px 3px;
+  color: #882cca;
+  margin-left: 4px;
+}
+.post-desc {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.post-widgets {
+  display: flex;
+  width: 100%;
+  height: 30px;
+  position: relative;
+  margin-bottom: 10px;
+  z-index: 1;
+}
+.widgets-buttons {
+  position: absolute;
+  right: 0;
+  display: flex;
+  z-index: 1;
+}
+.widget-icon {
+  margin-left: 10px;
+  margin-right: 5px;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  z-index: 1;
+}
