@@ -40,25 +40,19 @@ const Status = () => {
 
             </div>
             <h2 style={{ color: "white", margin: "5px" }}>My statuses:</h2>
-            <span style={{ fontSize: "20px", margin: "5px" }}>Update your statuses regularly to initiate new discussions!</span>
+            <span style={{ color: "white", fontSize: "20px", margin: "5px" }}>Update your statuses regularly to initiate new discussions!</span>
             <h3 style={{ color: "white", margin: "15px 5px 5px" }}>Bodybuilding</h3>
             <div style={{ position: "absolute", right: "0", display: "flex", alignItems: "center", height: "40px" }}>
-                <p style={{ color: "lightgreen" }}>Active &nbsp;</p><p style={{ color: "rgb(190, 190, 190)" }}>| Not Active</p>
+                <p style={{ color: "lightgreen", fontWeight: 600 }}>Active &nbsp;</p><p style={{ color: "#FFF", fontWeight: 600 }}>| Not Active</p>
             </div>
             <textarea className={Style("status-changer")}>
             </textarea>
 
             <h3 style={{ color: "white", margin: "15px 5px 5px" }}>Cinema</h3>
-            <div style={{ position: "absolute", right: "0", display: "flex", alignItems: "center", height: "40px" }}>
-                <p style={{ color: "lightgreen" }}>Active &nbsp;</p><p style={{ color: "rgb(190, 190, 190)" }}>| Not Active</p>
-            </div>
             <textarea className={Style("status-changer")}>
             </textarea>
 
             <h3 style={{ color: "white", margin: "15px 5px 5px" }}>Voice Acting</h3>
-            <div style={{ position: "absolute", right: "0", display: "flex", alignItems: "center", height: "40px" }}>
-                <p style={{ color: "lightgreen" }}>Active &nbsp;</p><p style={{ color: "rgb(190, 190, 190)" }}>| Not Active</p>
-            </div>
             <textarea className={Style("status-changer")}>
             </textarea>
         </div>
