@@ -1,48 +1,74 @@
 {
-    "data":
-    [
+    "data": [
         {
-            "title":"Homotopy type theory - The new foundation of mathematics",
+            "title": "Homotopy type theory - The new foundation of mathematics",
             "tag": "Mathematics",
-            "time": "11/9/2020 @2:00pm",
-            "contributors":["Konstantin Victoria", "Artem Dinh"],
-            "duration" : "12min : 9sec",
-            "stats" : [5,10]
+            "time": "09 Nov 2020 @2:00pm",
+            "contributors": [
+                "Konstantin Victoria",
+                "Artem Dinh"
+            ],
+            "duration": "12min • 6 recordings",
+            "stats": [
+                5,
+                10
+            ]
         },
         {
-            "title":"The Style of Contemporary Marketing",
+            "title": "How I mastered Contemporary Marketing",
             "tag": "Marketing",
-            "time": "11/7/2020 @1:00pm",
-            "contributors":["Emily Chun", "Shorya Gupta"],
-            "duration" : "5min : 7sec",
-            "stats" : [100,24]
-        }
-        ,
+            "time": "07 Nov 2020 @1:00pm",
+            "contributors": [
+                "Emily Chun",
+                "Shorya Gupta"
+            ],
+            "duration": "5min • 4 recordings",
+            "stats": [
+                100,
+                24
+            ]
+        },
         {
-            "title":"A look into the Philosophy of Tenet",
+            "title": "A look into the Philosophy of Tenet",
             "tag": "Cinema",
-            "time": "11/3/2020 @4:13pm",
-            "contributors":["Alec Xiao", "David Xavier"],
-            "duration" : "24min : 1sec",
-            "stats" : [1000,54]
-        }
-        ,
+            "time": "03 Nov 2020 @4:13pm",
+            "contributors": [
+                "Alec Xiao",
+                "David Xavier"
+            ],
+            "duration": "24min • 5 recordings",
+            "stats": [
+                1000,
+                54
+            ]
+        },
         {
-            "title":"Fornite Update 12",
+            "title": "Fornite Update 12",
             "tag": "Fortnite",
-            "time": "10/14/2020 @10:13pm",
-            "contributors":["The_Nexthor", "Darklight Menace"],
-            "duration" : "7min : 23sec",
-            "stats" : [12,4]
-        }
-        ,
+            "time": "14 Oct 2020 @10:13pm",
+            "contributors": [
+                "The_Nexthor",
+                "Darklight Menace"
+            ],
+            "duration": "7min • 3 recordings",
+            "stats": [
+                12,
+                4
+            ]
+        },
         {
-            "title":"Yellowstone - America's Pearl",
+            "title": "Yellowstone - America's Pearl",
             "tag": "Nature",
-            "time": "7/3/2020 @5:54pm",
-            "contributors":["NatureLover", "Yellowstone Park Ranger"],
-            "duration" : "24min : 1sec",
-            "stats" : [10,1]
+            "time": "03 Jul 2020 @5:54pm",
+            "contributors": [
+                "NatureLover",
+                "Yellowstone Park Ranger"
+            ],
+            "duration": "24min • 9 recordings",
+            "stats": [
+                10,
+                1
+            ]
         }
     ]
 }

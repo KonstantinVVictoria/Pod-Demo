@@ -5,14 +5,14 @@
   flex-direction: column;
   padding-top: 30px;
   padding-bottom: 30px;
-  background-color: #882cca;
+  background-color: #FF7D66;
 }
 .profile-image {
   height: 150px;
   width: 150px;
   background-color: gray;
   border-radius: 100%;
-  border: 2px solid #882cca;
+  border: 2px solid #FF7D66;
   object-fit: cover;
   z-index: 1;
 }
@@ -38,10 +38,10 @@
 }
 .post-tag {
   border-radius: 100px;
-  border: solid 1px #882cca;
+  border: solid 1px #FF7D66;
   flex-grow: 0;
   padding: 3px 8px 3px;
-  color: #882cca;
+  color: #FF7D66;
   margin-left: 4px;
 }
 .post-desc {

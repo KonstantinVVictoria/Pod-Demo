@@ -2,6 +2,9 @@
   padding: 0px;
   height: auto;
   width: 100%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: white;
 }
 .post {
@@ -15,10 +18,10 @@
 }
 .post-tag {
   border-radius: 100px;
-  border: solid 1px #882cca;
+  border: solid 2px #FF7D66;
   flex-grow: 0;
   padding: 3px 8px 3px;
-  color: #882cca;
+  color: #FF7D66;
 }
 .post-desc {
   display: flex;
@@ -37,6 +40,7 @@
   position: absolute;
   right: 0;
   display: flex;
+  align-items: center;
   z-index: 1;
 }
 .widget-icon {
